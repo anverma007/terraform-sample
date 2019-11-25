@@ -1,14 +1,14 @@
 
 provider "aws" {
-  region = "eu-central-1"
+  region = "us-east-2"
 }
 
 resource "aws_instance" "web" {
-  ami           = "ami-050a22b7e0cf85dd0"
+  ami           = "ami-0d03add87774b12c5"
   instance_type = "t2.micro"
-  key_name      = "master-key"
+  key_name      = "anv"
 
   tags = {
-    Name = "tf-deployment-server"
+    Name = "anverma"
   }
 }
